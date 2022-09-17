@@ -16,8 +16,12 @@ export default function Navbar() {
         const starsRounded = (data.stargazers_count/1000).toFixed(1);
         setStarsCount(starsRounded + 'k');
       })
+      .catch((error) => {
+        setStarsCount('');
+        console.log(error);
+      })
   }, [])
-  
+
   return (
     <nav className="nav">
       <Link className="nav__logo" to={"/"}>
