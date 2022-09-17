@@ -20,7 +20,7 @@ export const Body = () => {
           <img
             alt="Add html element Gif"
             className="shadow"
-            src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+            src="https://media.giphy.com/media/p70TAgHoCqFHK4RBEq/giphy.gif"
           />
       </Section>
 
@@ -36,7 +36,7 @@ export const Body = () => {
           <img
             alt="Add html element Gif"
             className="shadow"
-            src="https://media.giphy.com/media/YyPpNuH86r25JZNd46/giphy.gif"
+            src="https://media.giphy.com/media/mAPBO4eS2OEuRBkQFa/giphy.gif"
           />
         
       </Section>
@@ -53,7 +53,7 @@ export const Body = () => {
           <img
             alt="Add component attribute Gif"
             className="shadow"
-            src="https://media.giphy.com/media/3eKBo9Qfi16mVdGIz4/giphy.gif"
+            src="https://media.giphy.com/media/vTyrzVmmFk1L8Bj7Ji/giphy.gif"
           />
         
       </Section>
@@ -72,7 +72,7 @@ export const Body = () => {
           <img
             alt="Notes Gif"
             className="shadow"
-            src="https://media.giphy.com/media/1ttTOYNOTYBSOoWtG1/giphy.gif"
+            src="https://media.giphy.com/media/pbKOCIjUKSVotE5ImK/giphy.gif"
           />
         
       </Section>
@@ -91,7 +91,7 @@ export const Body = () => {
           <img
             alt="Add html element attribute Gif"
             className="shadow"
-            src="https://media.giphy.com/media/aXMkIStyTE0jkNlRtO/giphy.gif"
+            src="https://media.giphy.com/media/2L1RcRzNEM94wBrHWJ/giphy.gif"
           />
         
       </Section>
@@ -103,14 +103,14 @@ export const Body = () => {
               <h1>Style HTML Elements</h1>
               <p className="p">
                 Stylize HTML elements to visualize your product. Adjustable
-                style options to include height, width, color, and size.
+                style options to include height, width, grid area, and color.
               </p>
             
           </HeadTwoStyle>
           <img
             alt="Style html elements Gif"
             className="shadow"
-            src="https://media.giphy.com/media/Q0DYBMnuMLXoo5buvW/giphy.gif"
+            src="https://media.giphy.com/media/B1HQXndtf6nM9FedMm/giphy.gif"
           />
         
       </Section>

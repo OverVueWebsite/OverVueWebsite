@@ -32,6 +32,10 @@ h3::after {
   margin: 20px 0px;
   
 }
+hr {
+  height: 1.5px;
+  width: 100%;
+}
 p {
   font-size: 18px;
   /* margin-bottom: 18px; */
