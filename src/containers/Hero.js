@@ -75,7 +75,7 @@ export const Hero = () => (
 const HeaderStyles = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 75vh;
   background: rgb(37, 96, 159);
   background: linear-gradient(
     107deg,
@@ -96,7 +96,7 @@ const HeaderStyles = styled.div`
     margin-left: 0.5em;
   }
   .title {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
