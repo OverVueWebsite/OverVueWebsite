@@ -20,8 +20,8 @@ export default function EnvironmentSetup() {
         </div>
         <div className="desc">
           <div>
-            ​<h3>Connect to Slack OAuth</h3>
-            <p>OverVue offers Slack OAuth within the application to link your OverVue instance into any slack channel. After logging in, you can send a message to your Slack channel after saving the project.</p>
+            ​<h3>Connect to Slack</h3>
+            <p>OverVue offers Slack within the application to link your OverVue instance into any slack channel. After logging in, you can send a message to your Slack channel after saving the project.</p>
           </div>
           <img className="gif" alt="show grid density" src={SlackOAuth}></img>
         </div>

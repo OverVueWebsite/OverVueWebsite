@@ -21,6 +21,18 @@ export default function Routes() {
             Make use of the popular Vue component library element+
           </li>
         </ul>
+        <h2>Hierarchy Visualization</h2>​
+        <ul>
+          <li>
+            intro to benefit(s) of hierarchy visualization
+          </li>
+          <li>
+            how to use
+          </li>
+          <li>
+            extra
+          </li>
+        </ul>
       </div>
     </DocsLayout>
   );

@@ -26,18 +26,18 @@ export const links = {
       label: "Creating New Components",
       link: "/docs/create-component",
     },
-    {
-      label: "Adding Styling",
-      link: "/docs/component-styling",
-    },
+    // {
+    //   label: "Adding Styling",
+    //   link: "/docs/component-styling",
+    // },
     {
       label: "Using and Visualizing Routes",
       link: "/docs/routes",
     },
-    {
-      label: "Hierarchy Visualization",
-      link: "/docs/hierarchy-visualization",
-    },
+    // {
+    //   label: "Hierarchy Visualization",
+    //   link: "/docs/hierarchy-visualization",
+    // },
     {
       label: "Saving and Exporting your Code",
       link: "/docs/save-and-export",

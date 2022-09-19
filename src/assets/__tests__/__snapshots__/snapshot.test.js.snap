@@ -1,0 +1,791 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Adding documentation tabs renders correctly 1`] = `
+<div
+  className="sc-bwzfXH iWKXRy"
+>
+  <h2>
+    Want to Contribute?
+  </h2>
+  <div>
+    OverVue is open source. Help make Vue prototyping better!
+  </div>
+  <a
+    className="contribute"
+    href="https://github.com/open-source-labs/OverVue"
+  >
+    <p>
+      Github 
+    </p>
+     
+    <i
+      className="fab fa-github"
+    />
+  </a>
+</div>
+`;
+
+exports[`Adding documentation tabs renders create component correctly 1`] = `
+<div
+  className="docs__layout"
+>
+  <nav
+    className="nav"
+  >
+    <a
+      className="nav__logo"
+      href="/"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      Home
+    </a>
+    <div
+      className="nav__actions"
+    >
+      <a
+        className="nav__action"
+        href="/docs"
+      >
+        Docs
+      </a>
+      <a
+        className="nav__action"
+        href="/ourteam"
+      >
+        Our Team
+      </a>
+      <a
+        href="https://github.com/open-source-labs/OverVue"
+      >
+        <img
+          alt="black github logo"
+          className="github_logo"
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        />
+        2,294
+      </a>
+    </div>
+  </nav>
+  <div
+    className="docs__body"
+  >
+    <div
+      className="sidebar"
+    >
+      <div
+        className="sidebar__inner"
+      >
+        <h3>
+          Getting Started
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/introduction"
+        >
+          Introduction
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/installation"
+        >
+          Installation
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/new-user-tutorial"
+        >
+          New User Tutorial
+        </a>
+        <h3>
+          Guides
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/environment-setup"
+        >
+          Setting Up Your Environment
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/create-component"
+        >
+          Creating New Components
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/component-styling"
+        >
+          Adding Styling
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/routes"
+        >
+          Using and Visualizing Routes
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/hierarchy-visualization"
+        >
+          Hierarchy Visualization
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/save-and-export"
+        >
+          Saving and Exporting your Code
+        </a>
+      </div>
+    </div>
+    <div
+      className="docs__content"
+    >
+      <h2>
+        Creating New Components
+      </h2>
+      ​
+      <ul>
+        <li>
+          creating new component
+        </li>
+        <li>
+          using element + components
+        </li>
+        <li>
+          adding classes, id, parent/child,
+        </li>
+        <li>
+          editing components
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Adding documentation tabs renders docs getting started correctly 1`] = `
+<div
+  className="docs__layout"
+>
+  <nav
+    className="nav"
+  >
+    <a
+      className="nav__logo"
+      href="/"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      Home
+    </a>
+    <div
+      className="nav__actions"
+    >
+      <a
+        className="nav__action"
+        href="/docs"
+      >
+        Docs
+      </a>
+      <a
+        className="nav__action"
+        href="/ourteam"
+      >
+        Our Team
+      </a>
+      <a
+        href="https://github.com/open-source-labs/OverVue"
+      >
+        <img
+          alt="black github logo"
+          className="github_logo"
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        />
+        2,294
+      </a>
+    </div>
+  </nav>
+  <div
+    className="docs__body"
+  >
+    <div
+      className="sidebar"
+    >
+      <div
+        className="sidebar__inner"
+      >
+        <h3>
+          Getting Started
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/introduction"
+        >
+          Introduction
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/installation"
+        >
+          Installation
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/new-user-tutorial"
+        >
+          New User Tutorial
+        </a>
+        <h3>
+          Guides
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/environment-setup"
+        >
+          Setting Up Your Environment
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/create-component"
+        >
+          Creating New Components
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/component-styling"
+        >
+          Adding Styling
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/routes"
+        >
+          Using and Visualizing Routes
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/hierarchy-visualization"
+        >
+          Hierarchy Visualization
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/save-and-export"
+        >
+          Saving and Exporting your Code
+        </a>
+      </div>
+    </div>
+    <div
+      className="docs__content"
+    >
+      <h2>
+        Introduction
+      </h2>
+      <p>
+          
+         
+        OverVue is a developer tool that allows you to seemlessly create and visualize a Vue application with expansive prototyping, a real-time, intuitive tree display of routing and component hierarchy, and live-generated, exportable boilerplate code. The best way to get started is by following our new user tutorial.
+         
+      </p>
+      <h3>
+        Key Features
+      </h3>
+      ​
+      <ul>
+        <li>
+          Quickly produce product prototypes with your choice of custom or element+ library components.
+        </li>
+        <li>
+          Customize your prototype with snap-to-grid positioning and component color and sizing.
+        </li>
+        <li>
+          Visualize and manipulate project routing, component hierarchies, and code snippets in real time.
+        </li>
+        <li>
+          Export custom boilerplate code for Vue 3.0 applications including neccessary npm packages, Oauth login of your choice, customized Vue SFC's, and component testing files.
+        </li>
+        <li>
+          Share project updates with your team via Slack.
+        </li>
+      </ul>
+      <h3>
+        New to Vue 8.0
+      </h3>
+      <p>
+          
+         
+        Vue 8.0 augments prototyping abilities with the addition of element+ components, snap to grid positioning, and exportable color and sizing. In addition, users can now add Oauth boilerplate code and component testing files for their exportable projects.
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Adding documentation tabs renders environment setup correctly 1`] = `
+<div
+  className="docs__layout"
+>
+  <nav
+    className="nav"
+  >
+    <a
+      className="nav__logo"
+      href="/"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      Home
+    </a>
+    <div
+      className="nav__actions"
+    >
+      <a
+        className="nav__action"
+        href="/docs"
+      >
+        Docs
+      </a>
+      <a
+        className="nav__action"
+        href="/ourteam"
+      >
+        Our Team
+      </a>
+      <a
+        href="https://github.com/open-source-labs/OverVue"
+      >
+        <img
+          alt="black github logo"
+          className="github_logo"
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        />
+        2,294
+      </a>
+    </div>
+  </nav>
+  <div
+    className="docs__body"
+  >
+    <div
+      className="sidebar"
+    >
+      <div
+        className="sidebar__inner"
+      >
+        <h3>
+          Getting Started
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/introduction"
+        >
+          Introduction
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/installation"
+        >
+          Installation
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/new-user-tutorial"
+        >
+          New User Tutorial
+        </a>
+        <h3>
+          Guides
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/environment-setup"
+        >
+          Setting Up Your Environment
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/create-component"
+        >
+          Creating New Components
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/component-styling"
+        >
+          Adding Styling
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/routes"
+        >
+          Using and Visualizing Routes
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/hierarchy-visualization"
+        >
+          Hierarchy Visualization
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/save-and-export"
+        >
+          Saving and Exporting your Code
+        </a>
+      </div>
+    </div>
+    <div
+      className="docs__content"
+    >
+      <h2>
+        Setting Up Your OverVue Environment
+      </h2>
+      <div
+        className="desc"
+      >
+        <div>
+          ​
+          <h3>
+            Setting Grid Density
+          </h3>
+          <p>
+            A key feature of OverVue is the ability to dynamically change the grid layout of the prototyping canvas before you start. Within the navigation bar on the top of the application, there are two buttons: Height and Width. Click either to have the a pulldown menu show what how many grid lines you want in each axis.
+          </p>
+        </div>
+        <img
+          alt="show grid density"
+          className="gif"
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="desc"
+      >
+        <div>
+          ​
+          <h3>
+            Connect to Slack OAuth
+          </h3>
+          <p>
+            OverVue offers Slack OAuth within the application to link your OverVue instance into any slack channel. After logging in, you can send a message to your Slack channel after saving the project.
+          </p>
+        </div>
+        <img
+          alt="show grid density"
+          className="gif"
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="desc"
+      >
+        <div>
+          ​
+          <h3>
+            Add Project TypeScript and OAuth 
+          </h3>
+          <p>
+            OverVue includes the feature to implement TypeScript and Google/Github OAuth when exporting your project prototype. To turn TypeScript or Oauth modes on or off, click on the Settings gear icon in the right corner of the nav bar and click the toggle at the bottom of the menu of each respective setting.
+          </p>
+        </div>
+        <img
+          alt="show grid density"
+          className="gif"
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Adding documentation tabs renders hierarchy visualization correctly 1`] = `
+<div
+  className="docs__layout"
+>
+  <nav
+    className="nav"
+  >
+    <a
+      className="nav__logo"
+      href="/"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      Home
+    </a>
+    <div
+      className="nav__actions"
+    >
+      <a
+        className="nav__action"
+        href="/docs"
+      >
+        Docs
+      </a>
+      <a
+        className="nav__action"
+        href="/ourteam"
+      >
+        Our Team
+      </a>
+      <a
+        href="https://github.com/open-source-labs/OverVue"
+      >
+        <img
+          alt="black github logo"
+          className="github_logo"
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        />
+        2,294
+      </a>
+    </div>
+  </nav>
+  <div
+    className="docs__body"
+  >
+    <div
+      className="sidebar"
+    >
+      <div
+        className="sidebar__inner"
+      >
+        <h3>
+          Getting Started
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/introduction"
+        >
+          Introduction
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/installation"
+        >
+          Installation
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/new-user-tutorial"
+        >
+          New User Tutorial
+        </a>
+        <h3>
+          Guides
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/environment-setup"
+        >
+          Setting Up Your Environment
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/create-component"
+        >
+          Creating New Components
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/component-styling"
+        >
+          Adding Styling
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/routes"
+        >
+          Using and Visualizing Routes
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/hierarchy-visualization"
+        >
+          Hierarchy Visualization
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/save-and-export"
+        >
+          Saving and Exporting your Code
+        </a>
+      </div>
+    </div>
+    <div
+      className="docs__content"
+    >
+      <h2>
+        Hierarchy Visualization
+      </h2>
+      ​
+      <ul>
+        <li>
+          intro to benefit(s) of hierarchy visualization
+        </li>
+        <li>
+          how to use
+        </li>
+        <li>
+          extra
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Adding documentation tabs renders styling component correctly 1`] = `
+<div
+  className="docs__layout"
+>
+  <nav
+    className="nav"
+  >
+    <a
+      className="nav__logo"
+      href="/"
+    >
+      <img
+        alt="logo"
+        src="test-file-stub"
+      />
+      Home
+    </a>
+    <div
+      className="nav__actions"
+    >
+      <a
+        className="nav__action"
+        href="/docs"
+      >
+        Docs
+      </a>
+      <a
+        className="nav__action"
+        href="/ourteam"
+      >
+        Our Team
+      </a>
+      <a
+        href="https://github.com/open-source-labs/OverVue"
+      >
+        <img
+          alt="black github logo"
+          className="github_logo"
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        />
+        2,294
+      </a>
+    </div>
+  </nav>
+  <div
+    className="docs__body"
+  >
+    <div
+      className="sidebar"
+    >
+      <div
+        className="sidebar__inner"
+      >
+        <h3>
+          Getting Started
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/introduction"
+        >
+          Introduction
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/installation"
+        >
+          Installation
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/new-user-tutorial"
+        >
+          New User Tutorial
+        </a>
+        <h3>
+          Guides
+        </h3>
+        <a
+          className="sidebar__link"
+          href="/docs/environment-setup"
+        >
+          Setting Up Your Environment
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/create-component"
+        >
+          Creating New Components
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/component-styling"
+        >
+          Adding Styling
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/routes"
+        >
+          Using and Visualizing Routes
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/hierarchy-visualization"
+        >
+          Hierarchy Visualization
+        </a>
+        <a
+          className="sidebar__link"
+          href="/docs/save-and-export"
+        >
+          Saving and Exporting your Code
+        </a>
+      </div>
+    </div>
+    <div
+      className="docs__content"
+    >
+      <h2>
+        Component Styling
+      </h2>
+      <div
+        className="desc"
+      >
+        <div>
+          ​
+          <h3>
+            Component Details
+          </h3>
+          <p>
+            After adding a component class name, under the component details tab, you can access details about the active/selected component - including a code snippet (live generated boilerplate code), the HTML elements, state, actions or props in the component. The code snippet dynamically renders grid area position, color, and size of the component. Additionally OverVue can now make use of the popular Vue component Library Element Plus.
+          </p>
+        </div>
+        <img
+          alt="codesnippet"
+          className="gif"
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
