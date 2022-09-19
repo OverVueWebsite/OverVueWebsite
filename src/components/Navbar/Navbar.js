@@ -3,23 +3,23 @@ import { Link } from "gatsby";
 import logo from "../../assets/logo/overvue-nav.png";
 import "./navbar.css";
  
-
 // OG Nav Bar
 export default function Navbar() {
 
-  // Client-side runtime data fetching of OverVue Github stars
-  const [starsCount, setStars] = useState('')
+  // Fetch Github stars at runtime
+  const [starsCount, setStarsCount] = useState('')
   useEffect(() => {
+    // Fetch data from Github api
     fetch('https://api.github.com/repos/open-source-labs/OverVue')
-    .then(response => response.json())
-    .then(resultData => {
-      // roundedStars = (resultData.stargazers_count1000).toFixed(1)
-      // console.log(roundedStars);
-      console.log(resultData.stargazers_count/1000);
-      const roundedStars = (resultData.stargazers_count/1000).toFixed(1) + 'K';
-      console.log(roundedStars);
-      setStars(roundedStars)
-    })
+      .then(response => response.json())
+      .then(data => {
+        const starsRounded = (data.stargazers_count/1000).toFixed(1);
+        setStarsCount(starsRounded + 'k');
+      })
+      .catch((error) => {
+        setStarsCount('');
+        console.log(error);
+      })
   }, [])
 
   return (
