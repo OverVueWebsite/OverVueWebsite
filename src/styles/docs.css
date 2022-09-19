@@ -49,6 +49,7 @@ li {
 
 .gif {
   max-width: 700px;
+  max-height: 600px;
   padding: 0 2em;
   width:100%;
   height: auto;
