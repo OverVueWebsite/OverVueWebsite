@@ -31,6 +31,10 @@ export const links = {
     //   link: "/docs/component-styling",
     // },
     {
+      label: "Oauth",
+      link: "/docs/oauthConfig",
+    },
+    {
       label: "Using and Visualizing Routes",
       link: "/docs/routes",
     },

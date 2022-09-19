@@ -59,7 +59,7 @@ li {
 }
 
 .desc {
-  display: flex;
+ 
   margin: 2em 0;
 }
 .horiz {
@@ -68,4 +68,16 @@ li {
   display: block;
   height: 1.5px;
   margin: 20px 0px;
+}
+
+
+@media screen and (min-width: 1500px) {
+  .desc {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.saveImport{
+  margin-right: 110px;
 }
