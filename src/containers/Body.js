@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import HeadTwoStyle from "../styles/HeadTwoStyle";
+import HeadTwoStyle from "../styles/HeadTwoStyle";
 import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -78,7 +78,29 @@ export const Body = () => {
   }
 
   return (
-      <OvervuePreview>
+    <>
+    <BodyHeader>New in Overvue 8.0</BodyHeader>
+    <SectionContainer>
+        <Section>
+          <HeadTwoStyle>
+            
+              <h1>Create Components</h1>
+              <p className="p">
+                Quickly start your project by creating and naming your first
+                component. Interact with it in the CSS Container.
+              </p>
+
+          </HeadTwoStyle>
+          <img
+            alt="Add html element Gif"
+            className="shadow"
+            src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+          />
+        </Section>
+      </SectionContainer>
+
+      <BodyHeader>Additional Features</BodyHeader>
+      <AdditionalFeature>
           <ImageContainer>
             <img
                   alt="Gif of exporting the prototype's boilerplate"
@@ -103,17 +125,22 @@ export const Body = () => {
               <label class="btn btn-secondary" for="3">Button3</label>
             </ToggleButton> */}
           </ToggleButtonContainer>
-      </OvervuePreview>
+      </AdditionalFeature>
+    </>
   );
 }; 
 
-const OvervuePreview = styled.div`
+const AdditionalFeature = styled.div`
   position: "fixed";
   scroll = "no";
   margin: 5em 10em 10em 10em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
+`
+
+const BodyHeader = styled.h1`
+  color: black;
 `
 const ImageContainer = styled.div`
   margin: 1em;
@@ -168,56 +195,60 @@ const ToggleButton = styled.div`
   }
 `
 
-// const SectionContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   width: 100%;
-//   padding: 60px 32px;
-// `
+const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 60px 32px;
 
-// const Section = styled.div`
-//   display: flex;
-//   width: 100%;
-//   max-width: 1300px;
-//   justify-content: space-between;
-//   margin-bottom: 120px;
+  h1{
+    color:black;
+  }
+`
 
-//   div {
-//     color: #000000
-//   }
+const Section = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  justify-content: space-between;
+  margin-bottom: 120px;
 
-//   h1 {
-//     margin-bottom: 1.5rem;
-//     color: #666666 !important;
-//   }
-//   p {
-//     color: #666666 !important;
-//     font-size: 1.5rem;
-//     font-weight: 300;
-//   }
-//   h1::after {
-//     background: hsla(0, 0%, 56.5%, 0.5);
-//     content: "";
-//     display: block;
-//     height: 1.5px;
-//     margin: 20px 0px;
+  div {
+    color: #000000
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #666666 !important;
+  }
+  p {
+    color: #666666 !important;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  h1::after {
+    background: hsla(0, 0%, 56.5%, 0.5);
+    content: "";
+    display: block;
+    height: 1.5px;
+    margin: 20px 0px;
     
-//   }
+  }
 
-//   img {
-//     max-width: 500px;
-//     width: 100%;
-//     margin-right: 60px;
-//   }
+  img {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 60px;
+  }
 
-//   @media only screen and (max-width: 900px) {
-//     flex-direction: column;
-//     align-items: center;
-//     img {
-//       max-width: unset;
-//       margin: 0px;
-//       margin-bottom: 32px;
-//     }
-//   }
-// `
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-width: unset;
+      margin: 0px;
+      margin-bottom: 32px;
+    }
+  }
+`
