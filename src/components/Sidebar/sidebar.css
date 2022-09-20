@@ -4,9 +4,10 @@
   justify-content: flex-start;
   background: linear-gradient( 107deg, rgb(52,73,94) 0%, rgb(1,4,31) 70% );
   padding: 16px;
+  min-height: 100%;
   height: 100vh;
   width: 300px;
-  position: relative;
+  position: sticky;
 }
 
 .sidebar__inner {
@@ -23,11 +24,13 @@
   margin-left: 28px;
 }
 
+
 .sidebar h3 {
   color: white;
   text-align: left;
   margin-bottom: 12px;
   margin-top: 20px;
+  margin-left: 15px;
   font-family: 'Mukta', sans-serif;
   font-weight: 300px;
   font-size: 20px;
