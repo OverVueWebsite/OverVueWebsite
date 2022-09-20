@@ -1,4 +1,4 @@
-/* content for hero of home page including OverVue banner, download buttons */
+/* content for hero of me page including OverVue banner, download buttons */
 
 import React from "react";
 import styled from "styled-components";
@@ -77,18 +77,18 @@ const HeaderStyles = styled.div`
   flex-direction: column;
   min-height: 75vh;
   background: rgb(37, 96, 159);
-  // background: linear-gradient(
-  //   107deg,
-  //   rgb(52, 73, 94) 0%,
-  //   rgb(1, 4, 31) 70%
-  // );
   background: linear-gradient(
-      // 107deg,
-      rgb(1, 4, 31) 0%,
-      // rgb(52, 73, 94) 70%,
-      rgb(255, 255, 255) 100%
+    107deg,
+    rgb(52, 73, 94) 0%,
+    rgb(1, 4, 31) 70%
+  );
+  // background: linear-gradient(
+  //     // 107deg,
+  //     rgb(1, 4, 31) 0%,
+  //     // rgb(52, 73, 94) %,
+  //     rgb(255, 255, 255) 100%
 
-    );
+  //   );
   align-items: center;
   justify-content: center;
   img {

@@ -26,21 +26,21 @@ export const Body = () => {
       header: "Add Notes",
       description: "You can add personalized messages to help you keep track of your components.",
     },
-    5: {
-      link: "https://media.giphy.com/media/aXMkIStyTE0jkNlRtO/giphy.gif",
-      header: "Add Two-Way Binding or other Attributes",
-      description: "Options to add attributes to add specific functionality such as two way binding and class is now available.",
-    },
-    6: {
-      link: "https://media.giphy.com/media/Q0DYBMnuMLXoo5buvW/giphy.gif",
-      header: "Style HTML Elements",
-      description: "Stylize HTML elements to visualize your product. Adjustable style options to include height, width, color, and size.",
-    },
-    7: {
-      link: "https://media.giphy.com/media/3j42CzkMDEpEFFbJZT/giphy.gif",
-      header: "Child Components",
-      description: "Child components can be easily incorporated into the code snippet. Child components will be available to be added from the HTML element list.",
-    },
+    // 5: {
+    //   link: "https://media.giphy.com/media/aXMkIStyTE0jkNlRtO/giphy.gif",
+    //   header: "Add Two-Way Binding or other Attributes",
+    //   description: "Options to add attributes to add specific functionality such as two way binding and class is now available.",
+    // },
+    // 6: {
+    //   link: "https://media.giphy.com/media/Q0DYBMnuMLXoo5buvW/giphy.gif",
+    //   header: "Style HTML Elements",
+    //   description: "Stylize HTML elements to visualize your product. Adjustable style options to include height, width, color, and size.",
+    // },
+    // 7: {
+    //   link: "https://media.giphy.com/media/3j42CzkMDEpEFFbJZT/giphy.gif",
+    //   header: "Child Components",
+    //   description: "Child components can be easily incorporated into the code snippet. Child components will be available to be added from the HTML element list.",
+    // },
     // 8: {
     //   link: "https://media.giphy.com/media/vncIbdxJ36uU7a1bk3/giphy.gif",
     //   header: "Visualize Prototype",
@@ -127,8 +127,10 @@ export const Body = () => {
           </Section>
       </SectionContainer>
 
-      <BodyHeader>Additional Features</BodyHeader>
+      {/* <BodyHeader>Additional Features</BodyHeader> */}
       <AdditionalFeature>
+        <BodyHeader className="additional-feature-header">Additional Features</BodyHeader>
+        <div className="feature-toggle">
           <ImageContainer>
             <img
                   alt="Gif of exporting the prototype's boilerplate"
@@ -136,27 +138,41 @@ export const Body = () => {
                   src={gifImage}
             />
           </ImageContainer>
-          <ToggleButtonContainer>
+          <ToggleButtonContainer className="toggle-button-container">
             {toggleButtonArray}
           </ToggleButtonContainer>
+        </div>
       </AdditionalFeature>
-      <BodyHeader>FOOTER PLACEHOLDER</BodyHeader>
     </div>
   );
 }; 
 
 const AdditionalFeature = styled.div`
-  // position: "fixed";
-  // scroll = "no";
-  margin-top: 2em
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-top: 2em;
+  padding-bottom: 6em;
   overflow: hidden;
+  background: linear-gradient(
+    107deg,
+    rgb(52, 73, 94) 0%,
+    rgb(1, 4, 31) 70%
+  );
+  .feature-toggle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .additional-feature-header {
+    color: white;
+  }
+
+  .toggle-button-container::-webkit-scrollbar {
+    display: none;
+  }
+
 `
 
 const BodyHeader = styled.h1`
   color: black;
-  margin-top: 3em;
+  margin: 1em;
   color: #666666
   font-size: 3em;
   font-weight: 300;
@@ -177,7 +193,7 @@ const ImageContainer = styled.div`
 const ToggleButtonContainer = styled.div`
   justify-self: start;
   align-self: center;
-  color: #000000;
+  // color: #000000;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -185,6 +201,7 @@ const ToggleButtonContainer = styled.div`
   max-height: 40vh;
   width: 35em;
   whitespace: no-wrap;
+
 `
 
 const ToggleButton = styled.div`
@@ -218,7 +235,6 @@ const SectionContainer = styled.div`
   align-items: center;
   width: 100%;
   padding: 60px 32px;
-
   h1{
     color:black;
   }

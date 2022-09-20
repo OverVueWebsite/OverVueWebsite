@@ -13,6 +13,8 @@ export const Button = styled.a`
   transition: 200ms ease-in;
   &:hover {
     background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+    
   }
   margin-top: 1rem;
   padding: 0.5em 1.2em;

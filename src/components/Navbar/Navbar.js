@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import logo from "../../assets/logo/overvue-nav.png";
-// import logo from "../../assets/logo/overvue_layeredlogo.png";
-// import logo from "../../assets/logo/overvue_trans.png";
 import "./navbar.css";
  
 // OG Nav Bar
