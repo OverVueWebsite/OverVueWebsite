@@ -41,21 +41,21 @@ export const Body = () => {
       header: "Child Components",
       description: "Child components can be easily incorporated into the code snippet. Child components will be available to be added from the HTML element list.",
     },
-    8: {
-      link: "https://media.giphy.com/media/vncIbdxJ36uU7a1bk3/giphy.gif",
-      header: "Visualize Prototype",
-      description: "Note the project's high level overview by visiting the Project Tree tab to observe the component's hierarchy.",
-    },
-    9: {
-      link: "https://media.giphy.com/media/JLCUOmKfQpOmdWUf4l/giphy.gif",
-      header: "Code Snippet",
-      description: "The boilerplate code is visible at every step of prototyping and dynamically updates according to new edits.",
-    },
-    10: {
-      link: "https://media.giphy.com/media/v8IbYTVrgFboHgpxBB/giphy.gif",
-      header: "Export boilerplate",
-      description: "Export the prototype's code in a lightweight boilerplate and develop the product further in an IDE.",
-    }
+    // 8: {
+    //   link: "https://media.giphy.com/media/vncIbdxJ36uU7a1bk3/giphy.gif",
+    //   header: "Visualize Prototype",
+    //   description: "Note the project's high level overview by visiting the Project Tree tab to observe the component's hierarchy.",
+    // },
+    // 9: {
+    //   link: "https://media.giphy.com/media/JLCUOmKfQpOmdWUf4l/giphy.gif",
+    //   header: "Code Snippet",
+    //   description: "The boilerplate code is visible at every step of prototyping and dynamically updates according to new edits.",
+    // },
+    // 10: {
+    //   link: "https://media.giphy.com/media/v8IbYTVrgFboHgpxBB/giphy.gif",
+    //   header: "Export boilerplate",
+    //   description: "Export the prototype's code in a lightweight boilerplate and develop the product further in an IDE.",
+    // }
   }
 
   const [gifImage, setGifImage] = useState(gifListObj[1].link);
@@ -78,25 +78,53 @@ export const Body = () => {
   }
 
   return (
-    <>
-    <BodyHeader>New in Overvue 8.0</BodyHeader>
-    <SectionContainer>
-        <Section>
-          <HeadTwoStyle>
-            
+    <div>
+      <BodyHeader>New in Overvue 8.0</BodyHeader>
+      <SectionContainer>
+          <Section>
+            <HeadTwoStyle>
+                <h1>Create Components</h1>
+                <p className="p">
+                  Quickly start your project by creating and naming your first
+                  component. Interact with it in the CSS Container.
+                </p>
+            </HeadTwoStyle>
+            <img
+              alt="Add html element Gif"
+              className="shadow"
+              src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+            />
+          </Section>
+
+          <Section>
+            <img
+              alt="Add html element Gif"
+              className="shadow"
+              src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+            />
+            <HeadTwoStyle>
               <h1>Create Components</h1>
               <p className="p">
                 Quickly start your project by creating and naming your first
                 component. Interact with it in the CSS Container.
               </p>
+            </HeadTwoStyle>
+          </Section>
 
-          </HeadTwoStyle>
-          <img
-            alt="Add html element Gif"
-            className="shadow"
-            src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
-          />
-        </Section>
+          <Section>
+          <HeadTwoStyle>
+              <h1>Create Components</h1>
+              <p className="p">
+                Quickly start your project by creating and naming your first
+                component. Interact with it in the CSS Container.
+              </p>
+            </HeadTwoStyle>
+            <img
+              alt="Add html element Gif"
+              className="shadow"
+              src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+            />
+          </Section>
       </SectionContainer>
 
       <BodyHeader>Additional Features</BodyHeader>
@@ -110,30 +138,17 @@ export const Body = () => {
           </ImageContainer>
           <ToggleButtonContainer>
             {toggleButtonArray}
-            {/* <ToggleButton>
-              <input type="radio" class="btn-check" name="options" id="1" autocomplete="off" onClick={(event)=>handleChange(event)}/>
-              <label class="btn btn-secondary" for="1">Button1</label>
-            </ToggleButton>
-            
-            <ToggleButton>
-              <input type="radio" class="btn-check" name="options" id="2" autocomplete="off" onClick={(event)=>handleChange(event)}/>
-              <label class="btn btn-secondary" for="2">Button2</label>
-            </ToggleButton>
-
-            <ToggleButton>
-              <input type="radio" class="btn-check" name="options" id="3" autocomplete="off" onClick={(event)=>handleChange(event)}/>
-              <label class="btn btn-secondary" for="3">Button3</label>
-            </ToggleButton> */}
           </ToggleButtonContainer>
       </AdditionalFeature>
-    </>
+      <BodyHeader>FOOTER PLACEHOLDER</BodyHeader>
+    </div>
   );
 }; 
 
 const AdditionalFeature = styled.div`
-  position: "fixed";
-  scroll = "no";
-  margin: 5em 10em 10em 10em;
+  // position: "fixed";
+  // scroll = "no";
+  margin-top: 2em
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
@@ -141,34 +156,39 @@ const AdditionalFeature = styled.div`
 
 const BodyHeader = styled.h1`
   color: black;
+  margin-top: 3em;
+  color: #666666
+  font-size: 3em;
+  font-weight: 300;
 `
 const ImageContainer = styled.div`
   margin: 1em;
   color: #000000;
   width: 40em;
-  justify-self: center;
+  justify-self: end;
   align-self: center;
   max-height: 50vh;
   img {
-    max-width: 40em;
+    max-width: 35em;
     border-radius: 0.25em;
   }
 `
 
 const ToggleButtonContainer = styled.div`
-  justify-self: center;
+  justify-self: start;
   align-self: center;
   color: #000000;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  max-height: 50vh;
-  width: 40em;
+  max-height: 40vh;
+  width: 35em;
+  whitespace: no-wrap;
 `
 
 const ToggleButton = styled.div`
-  height: 100%;
+  // height: 100%;
   transition: all .2s ease-in-out;
 
   :hover {
@@ -181,10 +201,7 @@ const ToggleButton = styled.div`
     border-width: 1px;
     border-color: lightgrey;
     margin: 1em;
-    width: 40em;
-  }
-  input.focu {
-    preventScroll: true;
+    width: 35em;
   }
   h1 {
     font-size: 1.25em;
