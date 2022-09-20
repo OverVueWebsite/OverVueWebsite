@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 // import HeadTwoStyle from "../styles/HeadTwoStyle";
 import styled from "styled-components";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 export const Body = () => {
-  const gifList = [
-    'https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif',
-    'https://media.giphy.com/media/YyPpNuH86r25JZNd46/giphy.gif',
-    'https://media.giphy.com/media/3eKBo9Qfi16mVdGIz4/giphy.gif',
-    'https://media.giphy.com/media/1ttTOYNOTYBSOoWtG1/giphy.gif',
-    'https://media.giphy.com/media/aXMkIStyTE0jkNlRtO/giphy.gif',
-    'https://media.giphy.com/media/Q0DYBMnuMLXoo5buvW/giphy.gif',
-    'https://media.giphy.com/media/3j42CzkMDEpEFFbJZT/giphy.gif',
-    'https://media.giphy.com/media/vncIbdxJ36uU7a1bk3/giphy.gif',
-    'https://media.giphy.com/media/JLCUOmKfQpOmdWUf4l/giphy.gif',
-    'https://media.giphy.com/media/v8IbYTVrgFboHgpxBB/giphy.gif',
-  ]
-
   
   const gifListObj = {
     1: {
@@ -74,268 +58,122 @@ export const Body = () => {
     }
   }
 
-  const [gifImage, setGifImage] = useState(gifList[0]);
+  const [gifImage, setGifImage] = useState(gifListObj[1].link);
 
-  // const handleChange = (val) => setGifImage(gifList[val]);
-  // const [value, setValue] = useState();
   const handleChange = (event) => {
-    console.log('hi')
-    console.log(event);
-    console.log(event.currentTarget.id);
-    console.log(event.currentTarget.value);
-
-    // console.log(typeof(event.currentTarget));
-
-    // setGifImage(gifList[val]);
+    setGifImage(gifListObj[event.currentTarget.id].link);
   };
-  
+
+  const toggleButtonArray = [];
+  for (let i = 1; i <= Object.keys(gifListObj).length; i++){
+    toggleButtonArray.push(
+      <ToggleButton>
+        <input type="radio" class="btn-check" name="options" id={i} autocomplete="off" onClick={(event)=>handleChange(event)}/>
+        <label class="btn btn-light" for={i}>
+          <h1>{gifListObj[i].header}</h1>
+          <p>{gifListObj[i].description}</p>
+        </label>
+      </ToggleButton>
+    )
+  }
+
   return (
-    <OvervuePreview>
-      <ImageContainer>
-        <img
-              alt="Gif of exporting the prototype's boilerplate"
-              className="shadow"
-              src={gifImage}
-        />
-      </ImageContainer>
-      <ToggleButtonContainer>
-        <ToggleButton>
-          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" onClick={(event)=>console.log(event.currentTarget.id)}/>
-          <label class="btn btn-secondary" for="option1">Button1</label>
-        </ToggleButton>
-        
-        <ToggleButton>
-          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" />
-          <label class="btn btn-secondary" for="option2">Button2</label>
-        </ToggleButton>
+      <OvervuePreview>
+          <ImageContainer>
+            <img
+                  alt="Gif of exporting the prototype's boilerplate"
+                  className="shadow"
+                  src={gifImage}
+            />
+          </ImageContainer>
+          <ToggleButtonContainer>
+            {toggleButtonArray}
+            {/* <ToggleButton>
+              <input type="radio" class="btn-check" name="options" id="1" autocomplete="off" onClick={(event)=>handleChange(event)}/>
+              <label class="btn btn-secondary" for="1">Button1</label>
+            </ToggleButton>
+            
+            <ToggleButton>
+              <input type="radio" class="btn-check" name="options" id="2" autocomplete="off" onClick={(event)=>handleChange(event)}/>
+              <label class="btn btn-secondary" for="2">Button2</label>
+            </ToggleButton>
 
-        <ToggleButton>
-          <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" />
-          <label class="btn btn-secondary" for="option3">Button3</label>
-        </ToggleButton>
-      </ToggleButtonContainer>
-    </OvervuePreview>
+            <ToggleButton>
+              <input type="radio" class="btn-check" name="options" id="3" autocomplete="off" onClick={(event)=>handleChange(event)}/>
+              <label class="btn btn-secondary" for="3">Button3</label>
+            </ToggleButton> */}
+          </ToggleButtonContainer>
+      </OvervuePreview>
   );
-};
-
-// export const Body = () => {
-//   return (
-//     <SectionContainer>
-//       <Section>
-//           <HeadTwoStyle>
-            
-//               <h1>Create Components</h1>
-//               <p className="p">
-//                 Quickly start your project by creating and naming your first
-//                 component. Interact with it in the CSS Container.
-//               </p> 
-
-//           </HeadTwoStyle>
-//           <img
-//             alt="Add html element Gif"
-//             className="shadow"
-//             src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
-//           />
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-//               <h1>Add and change HTML Elements</h1>
-//               <p className="p">
-//                 Add HTML elements inside your component. You can now modify the
-//                 specifications of your prototype.
-//               </p>
-//           </HeadTwoStyle>
-//           <img
-//             alt="Add html element Gif"
-//             className="shadow"
-//             src="https://media.giphy.com/media/YyPpNuH86r25JZNd46/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-//               <h1>Add attributes to components </h1>
-//               <p className="p">
-//                 Add a class and/or an ID attribute to the component to tailor it
-//                 to your needs.
-//               </p>
-//           </HeadTwoStyle>
-//           <img
-//             alt="Add component attribute Gif"
-//             className="shadow"
-//             src="https://media.giphy.com/media/3eKBo9Qfi16mVdGIz4/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Add Notes</h1>
-//               <p className="p">
-//                 You can add personalized messages to help you keep track of your
-//                 components.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Notes Gif"
-//             className="shadow"
-//             src="https://media.giphy.com/media/1ttTOYNOTYBSOoWtG1/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Add Two-Way Binding or other Attributes</h1>
-//               <p className="p">
-//                 Options to add attributes to add specific functionality such as
-//                 two way binding and class is now available.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Add html element attribute Gif"
-//             className="shadow"
-//             src="https://media.giphy.com/media/aXMkIStyTE0jkNlRtO/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Style HTML Elements</h1>
-//               <p className="p">
-//                 Stylize HTML elements to visualize your product. Adjustable
-//                 style options to include height, width, color, and size.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Style html elements Gif"
-//             className="shadow"
-//             src="https://media.giphy.com/media/Q0DYBMnuMLXoo5buvW/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Child Components</h1>
-//               <p className="p">
-//                 Child components can be easily incorporated into the code
-//                 snippet. Child components will be available to be added from the
-//                 HTML element list.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Gif of adding child components"
-//             className="shadow"
-//             src="https://media.giphy.com/media/3j42CzkMDEpEFFbJZT/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Visualize Prototype</h1>
-//               <p className="p">
-//                 Note the project's high level overview by visiting the Project
-//                 Tree tab to observe the component’s hierarchy.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Gif of visualizing the prototype project tree"
-//             className="shadow"
-//             src="https://media.giphy.com/media/vncIbdxJ36uU7a1bk3/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Code Snippet</h1>
-//               <p className="p">
-//                 The boilerplate code is visible at every step of prototyping and
-//                 dynamically updates according to new edits.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Gif of live rendering of code snippet"
-//             className="shadow"
-//             src="https://media.giphy.com/media/JLCUOmKfQpOmdWUf4l/giphy.gif"
-//           />
-        
-//       </Section>
-
-//       <Section>
-        
-//           <HeadTwoStyle>
-            
-//               <h1>Export boilerplate</h1>
-//               <p className="p">
-//                 Export the prototype's code in a lightweight boilerplate and
-//                 develop the product further in an IDE.
-//               </p>
-            
-//           </HeadTwoStyle>
-//           <img
-//             alt="Gif of exporting the prototype's boilerplate"
-//             className="shadow"
-//             src="https://media.giphy.com/media/v8IbYTVrgFboHgpxBB/giphy.gif"
-//           />
-        
-//       </Section>
-//     </SectionContainer>
-//   );
-// };
+}; 
 
 const OvervuePreview = styled.div`
-  margin: 1em;
+  position: "fixed";
+  scroll = "no";
+  margin: 5em 10em 10em 10em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  overflow: hidden;
 `
-
 const ImageContainer = styled.div`
   margin: 1em;
   color: #000000;
-`
-
-const ToggleButtonContainer = styled.div`
-  margin: 1em;
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-
-  input {
-    margin: 1fr;
+  width: 40em;ow 
+  justify-self: center;
+  align-self: center;
+  max-height: 50vh;
+  img {
+    max-width: 40em;
+    animation: fadeIn .25s;
+    -webkit-animation: fadeIn .25s;
+    -moz-animation: fadeIn .25s;
+    -o-animation: fadeIn .25s;
+    -ms-animation: fadeIn .25s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
   }
 `
 
+const ToggleButtonContainer = styled.div`
+  justify-self: center;
+  align-self: center;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 50vh;
+  width: 40em;
+`
+
 const ToggleButton = styled.div`
-  margin: 1em;
-  border-radius: 50px;
-  
+  height: 100%;
+  transition: all .2s ease-in-out;
+
+  :hover {
+    transform: scale(1.05);
+  }
+
+  label {
+    padding: 1em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    margin: 1em;
+    width: 40em;
+  }
+  input.focu {
+    preventScroll: true;
+  }
+  h1 {
+    font-size: 1.25em;
+  }
+  p {
+    font-size .75em;
+    color: grey;
+  }
 `
 
 // const SectionContainer = styled.div`

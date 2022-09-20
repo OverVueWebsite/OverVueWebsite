@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
-import logo from "../../assets/logo/overvue-nav.png";
+// import logo from "../../assets/logo/overvue-nav.png";
 import "./navbar.css";
  
 // OG Nav Bar
 export default function Navbar() {
 
   // Fetch Github stars at runtime
-  const [starsCount, setStarsCount] = useState('')
+  const [starsCount, setStarsCount] = useState('');
   useEffect(() => {
     // Fetch data from Github api
     fetch('https://api.github.com/repos/open-source-labs/OverVue')
