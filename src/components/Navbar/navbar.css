@@ -13,11 +13,17 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   font-family: 'Mukta', sans-serif;
   border-bottom: 1px solid #0e162f;
+  /* background-color: rgb(50, 56, 72); */
+  background-color: white;
 }
 
 .nav_logo {
+  /* width: 100%; */
+  max-width: 100em;
+}
+
+.nav_logo img {
   width: 100%;
-  max-width: 40px;
 }
 
 .overVue_logo {
@@ -39,7 +45,8 @@
 .nav_ourTeam {
   font-weight: 350px;
   text-decoration: none;
-  color: #0e162f;
+  /* color: #0e162f; */
+  color: black;
   padding-right: 8px;
 }
 
@@ -49,19 +56,23 @@
 
 .github_button,
 .nav_docs,
-.nav_ourTeam {
+.nav_ourTeam,
+.nav_logo {
+  transition: all .2s ease-in-out;
   height: 3em;
   padding: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-radius: 10px; */
 }
+
 
 .nav_logo:hover,
 .github_button:hover,
 .nav_docs:hover,
 .nav_ourTeam:hover {
-  text-decoration: underline;
+  transform: scale(1.05);
+  color: #7ad8ae;
 }
 
 .github_logo {

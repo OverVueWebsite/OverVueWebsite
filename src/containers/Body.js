@@ -118,21 +118,13 @@ const OvervuePreview = styled.div`
 const ImageContainer = styled.div`
   margin: 1em;
   color: #000000;
-  width: 40em;ow 
+  width: 40em;
   justify-self: center;
   align-self: center;
   max-height: 50vh;
   img {
     max-width: 40em;
-    animation: fadeIn .25s;
-    -webkit-animation: fadeIn .25s;
-    -moz-animation: fadeIn .25s;
-    -o-animation: fadeIn .25s;
-    -ms-animation: fadeIn .25s;
-  }
-  @keyframes fadeIn {
-    0% { opacity: 0;}
-    100% { opacity: 1;}
+    border-radius: 0.25em;
   }
 `
 
