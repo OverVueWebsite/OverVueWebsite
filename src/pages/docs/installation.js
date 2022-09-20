@@ -8,9 +8,7 @@ export default function Installation() {
       <div className="docs__content">
         <h2>Installation</h2>
         <p>
-          {" "}
           OverVue is compatible with both MacOS and WSL. Quickly install and set up using the quickstart guide for your operating system below.
-           {" "}
         </p>
         <h2>Installation Instructions</h2>​
         <ul>

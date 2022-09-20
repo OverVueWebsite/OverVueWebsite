@@ -11,20 +11,18 @@ export default function SaveAndExport() {
         <h2>Save and Export Your Projects</h2>
         <div className="desc">
           <div className="saveImport">
-            ​<h3>Save and import </h3>
-            <p>Saving and importing json object of Overvue instance</p>
+            ​<h3>Save and Import Prototype</h3>
+            <p>To save your progress within the application, click the save button in the top right corner of the application and save your prototype progress as a JSON. You can then import that JSON file to bring back your progress and the application will repopulate the canvas.</p>
           </div>
           <img className="gif" alt="show grid density" src={save}></img>
         </div>
         <div className="desc">
-          <div >
-            ​<h3>Export </h3>
-            <p>Exporting full boilerplate code/Exporting individual component code</p>
+          <div className="saveImport">
+            <h3>Export Project Prototype</h3>
+            <p>To export the project prototype, first click on the "Export" button in the top right corner. Click either "Your Project" to export a full project with boilerplate or click "Active Component" to export the specific component you created in the canvas.</p>
           </div>
           <img className="gif" alt="show grid density" src={exp}></img>
-        </div>​
-     
-       
+        </div>
       </div>
     </DocsLayout>
   );

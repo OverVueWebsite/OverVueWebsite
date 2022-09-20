@@ -7,14 +7,14 @@ export const links = {
       label: "Introduction",
       link: "/docs/introduction",
     },
-    {
-      label: "Installation",
-      link: "/docs/installation",
-    },
-    {
-      label: "New User Tutorial",
-      link: "/docs/new-user-tutorial",
-    },
+    // {
+    //   label: "Installation",
+    //   link: "/docs/installation",
+    // },
+    // {
+    //   label: "New User Tutorial",
+    //   link: "/docs/new-user-tutorial",
+    // },
   ],
   //section heading and nested links
   'guides': [
@@ -31,7 +31,7 @@ export const links = {
     //   link: "/docs/component-styling",
     // },
     {
-      label: "Oauth",
+      label: "OAuth Configuration",
       link: "/docs/oauthConfig",
     },
     {

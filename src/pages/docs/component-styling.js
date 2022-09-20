@@ -2,7 +2,7 @@ import React from "react";
 import { DocsLayout } from "../../layouts";
 import "../../styles/docs.css";
 import Codesnippet from "../../assets/doc-data/Codesnippet.jpg"
-import styled from "styled-components";
+// import styled from "styled-components";
 export default function ComponentStyling() {
   return (
     <DocsLayout>

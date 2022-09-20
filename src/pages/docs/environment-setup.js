@@ -5,7 +5,7 @@ import GridDensity from "../../assets/doc-data/GridDensity.jpg";
 import OptionsPullDown from "../../assets/doc-data/optionspulldown.jpg"
 import SlackOAuth from "../../assets/doc-data/SlackOAuth.jpg"
 // import HeadTwoStyle from "../../styles/HeadTwoStyle.js";
-import styled from "styled-components";
+// import styled from "styled-components";
 export default function EnvironmentSetup() {
   return (
     <DocsLayout>
@@ -36,45 +36,45 @@ export default function EnvironmentSetup() {
     </DocsLayout>
   );
 }
-const Section = styled.div`
-  display: flex;
-  width: 100%;
-  max-width: 1300px;
-  justify-content: space-between;
-  margin-bottom: 120px;
+// const Section = styled.div`
+//   display: flex;
+//   width: 100%;
+//   max-width: 1300px;
+//   justify-content: space-between;
+//   margin-bottom: 120px;
 
-  h3 {
-    margin-bottom: 1.5rem;
-    color: #666666 !important;
-  }
-  p {
-    color: #666666 !important;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.7rem;
-  }
-  h3::after {
-    background: hsla(0, 0%, 56.5%, 0.5);
-    content: "";
-    display: block;
-    height: 1.5px;
-    margin: 20px 0px;
+//   h3 {
+//     margin-bottom: 1.5rem;
+//     color: #666666 !important;
+//   }
+//   p {
+//     color: #666666 !important;
+//     font-size: 1.5rem;
+//     font-weight: 300;
+//     line-height: 1.7rem;
+//   }
+//   h3::after {
+//     background: hsla(0, 0%, 56.5%, 0.5);
+//     content: "";
+//     display: block;
+//     height: 1.5px;
+//     margin: 20px 0px;
     
-  }
+//   }
 
-  img {
-    max-width: 500px;
-    width: 100%;
-    margin-right: 60px;
-  }
+//   img {
+//     max-width: 500px;
+//     width: 100%;
+//     margin-right: 60px;
+//   }
 
-  @media only screen and (max-width: 900px) {
-    flex-direction: column;
-    align-items: center;
-    img {
-      max-width: unset;
-      margin: 0px;
-      margin-bottom: 32px;
-    }
-  }
-`
+//   @media only screen and (max-width: 900px) {
+//     flex-direction: column;
+//     align-items: center;
+//     img {
+//       max-width: unset;
+//       margin: 0px;
+//       margin-bottom: 32px;
+//     }
+//   }
+// `
