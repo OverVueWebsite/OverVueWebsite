@@ -1,29 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
 .team-h2 {
+  font-family: 'Inter', sans-serif;;
+  font-weight: 700;
   padding-top: 48px;
   font-size: 48px;
-  width: 100%;
+  max-width: 90%;
   color: white;
+  /* align-items:flex-start; */
 }
 
 .team-h3 {
+  font-family: 'Inter', sans-serif;
   font-size: 24px;
   max-width: 90%;
   margin-bottom: 12px;
   color: white;
   font-weight: 300;
+  
 }
 
 .team-h4 {
+  font-family: 'Inter', sans-serif;
   font-size: 36px;
-  width: 100%;
+  width: 90%;
   margin-bottom: 12px;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .team-h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 20px;
-  width: 100%;
+  width: 90%;
   margin-bottom: 12px;
   color: white;
   font-weight: 300;
@@ -33,6 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
   justify-content: center;
   max-width: 100%;
 }
