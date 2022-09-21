@@ -27,15 +27,6 @@ export default function Introduction() {
           </li>
         </ul>
 
-        <h3>Installation</h3>
-        <p>OverVue is compatible with both MacOS and WSL. Quickly install and set up using the quickstart guide for your operating system below.</p>
-        <h3>Installation Instructions</h3>
-        <div>
-          <p>1. Download the desktop App on the main landing page.</p>
-          <p>2. Extract the .zip file.</p>
-          <p>3. Run the .exe file called "OverVue.exe".</p>
-        </div>
-
 
         <h3>New to Vue 8.0</h3>
         <p>

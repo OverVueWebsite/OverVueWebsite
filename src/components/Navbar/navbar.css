@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -10,7 +12,7 @@
   align-items: center;
   z-index: 999;
   /* box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; */
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Inter', sans-serif;
   /* background-color: white; */
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.199);
 }
@@ -43,7 +45,7 @@
 .nav_ourTeam {
   font-weight: 350px;
   text-decoration: none;
-  color: black;
+  color: #0f1730;
   padding-right: 8px;
 }
 

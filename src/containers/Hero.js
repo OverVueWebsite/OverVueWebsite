@@ -34,7 +34,8 @@ export const Hero = () => (
       transition={{ delay: 1 }}
       className="subtitle"
     >
-      Prototype driven development
+      {/* Prototype driven development */}
+      Introducing OverVue 8.0
     </motion.p>
 
     <motion.div
@@ -48,7 +49,8 @@ export const Hero = () => (
       }}
     >
       <div className="title">
-        <p>Introducing OverVue 8.0</p>
+        {/* <p>Introducing OverVue 8.0</p> */}
+        {/* <p> With our latest launch, going from prototype to production takes just the click of a button </p> */}
       </div>
 
       <Button
@@ -96,6 +98,7 @@ const HeaderStyles = styled.div`
     margin-right: 1.5rem;
   }
   p {
+    color: white;
     font-size: 1em;
   }
   i {

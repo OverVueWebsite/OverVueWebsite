@@ -7,10 +7,10 @@ export const links = {
       label: "Introduction",
       link: "/docs/introduction",
     },
-    // {
-    //   label: "Installation",
-    //   link: "/docs/installation",
-    // },
+    {
+      label: "Installation",
+      link: "/docs/installation",
+    },
     // {
     //   label: "New User Tutorial",
     //   link: "/docs/new-user-tutorial",

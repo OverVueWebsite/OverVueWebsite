@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HeadTwoStyle from "../styles/HeadTwoStyle";
 import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Save from "../assets/doc-data/save.gif"
 export const Body = () => {
   
   const gifListObj = {
@@ -83,16 +83,15 @@ export const Body = () => {
       <SectionContainer>
           <Section>
             <HeadTwoStyle>
-                <h1>Create Components</h1>
+                <h1>Component Library Import</h1>
                 <p className="p">
-                  Quickly start your project by creating and naming your first
-                  component. Interact with it in the CSS Container.
+                  Quickly start your project by importing components from popular Vue Component Libraries.
                 </p>
             </HeadTwoStyle>
             <img
               alt="Add html element Gif"
               className="shadow"
-              src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+              src="https://media.giphy.com/media/p70TAgHoCqFHK4RBEq/giphy.gif"
             />
           </Section>
 
@@ -100,34 +99,31 @@ export const Body = () => {
             <img
               alt="Add html element Gif"
               className="shadow"
-              src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+              src="https://media.giphy.com/media/B1HQXndtf6nM9FedMm/giphy.gif"
             />
             <HeadTwoStyle>
-              <h1>Create Components</h1>
+              <h1>Precise Component Size & Position</h1>
               <p className="p">
-                Quickly start your project by creating and naming your first
-                component. Interact with it in the CSS Container.
+                Envision your project design with accurate component placement and sizing that persists upon project export.
               </p>
             </HeadTwoStyle>
           </Section>
 
           <Section>
           <HeadTwoStyle>
-              <h1>Create Components</h1>
+              <h1>Improved Exported Project Code</h1>
               <p className="p">
-                Quickly start your project by creating and naming your first
-                component. Interact with it in the CSS Container.
+                Options to add OAuth boilerplate to add additional functionality to the exported prototype project code.
               </p>
             </HeadTwoStyle>
             <img
               alt="Add html element Gif"
               className="shadow"
-              src="https://media.giphy.com/media/MHqQTb5Vdtewlra4pG/giphy.gif"
+              src={Save}
             />
           </Section>
       </SectionContainer>
 
-      {/* <BodyHeader>Additional Features</BodyHeader> */}
       <AdditionalFeature>
         <BodyHeader className="additional-feature-header">Additional Features</BodyHeader>
         <div className="feature-toggle">
@@ -173,7 +169,7 @@ const AdditionalFeature = styled.div`
 const BodyHeader = styled.h1`
   color: black;
   margin: 1em;
-  color: #666666
+  color: #0f1730;
   font-size: 3em;
   font-weight: 300;
 `

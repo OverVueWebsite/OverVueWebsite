@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
 .docs__content {
   display: flex;
   flex-grow: 1;
@@ -7,7 +9,6 @@
   align-items: center;
   text-align: left;
   margin: 0 auto;
-  /* padding: 0 0.8rem; */
   padding-top: 4rem;
   
 }

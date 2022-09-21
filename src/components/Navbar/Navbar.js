@@ -10,9 +10,11 @@ export default function Navbar() {
   const [starsCount, setStarsCount] = useState('');
   useEffect(() => {
     // Fetch data from Github api
+    console.log('useEffect');
     fetch('https://api.github.com/repos/open-source-labs/OverVue')
       .then(response => response.json())
       .then(data => {
+        console.log('data', data);
         const starsRounded = (data.stargazers_count/1000).toFixed(1);
         setStarsCount(starsRounded + 'k');
       })
