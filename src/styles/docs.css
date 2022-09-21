@@ -78,3 +78,7 @@ p {
 .saveImport{
   margin-right: 110px;
 }
+
+.minusMargin{
+  margin-top: -20px;
+}

@@ -95,19 +95,21 @@ export const Body = () => {
             />
           </Section>
 
-          <Section>
+          <ReverseLayout>
             <img
               alt="Add html element Gif"
-              className="shadow"
+              className="shadow num2"
               src="https://media.giphy.com/media/B1HQXndtf6nM9FedMm/giphy.gif"
             />
             <HeadTwoStyle>
+              <div className="num1">
               <h1>Precise Component Size & Position</h1>
               <p className="p">
                 Envision your project design with accurate component placement and sizing that persists upon project export.
               </p>
+              </div>
             </HeadTwoStyle>
-          </Section>
+          </ReverseLayout>
 
           <Section>
           <HeadTwoStyle>
@@ -144,6 +146,7 @@ export const Body = () => {
 }; 
 
 const AdditionalFeature = styled.div`
+  
   padding-top: 2em;
   padding-bottom: 6em;
   overflow: hidden;
@@ -163,6 +166,14 @@ const AdditionalFeature = styled.div`
   .toggle-button-container::-webkit-scrollbar {
     display: none;
   }
+  @media only screen and (max-width: 900px) {
+   
+    .feature-toggle {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
 
 `
 
@@ -274,6 +285,67 @@ const Section = styled.div`
   @media only screen and (max-width: 900px) {
     flex-direction: column;
     align-items: center;
+    img {
+      max-width: unset;
+      margin: 0px;
+      margin-bottom: 32px;
+    }
+  }
+`
+
+const ReverseLayout = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  div {
+    color: #000000
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #666666 !important;
+  }
+  p {
+    color: #666666 !important;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  h1::after {
+    background: hsla(0, 0%, 56.5%, 0.5);
+    content: "";
+    display: block;
+    height: 1.5px;
+    margin: 20px 0px;
+    
+  }
+
+  .num2 {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 60px;
+  }
+
+  @media only screen and (max-width: 900px) {
+
+  
+  
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-areas: 
+    "num1"
+    "num2"
+    ;
+  }
+  .num1{
+    grid-area: num1;
+  }
+  
+  .num2{
+    grid-area: num2;
+  }
     img {
       max-width: unset;
       margin: 0px;

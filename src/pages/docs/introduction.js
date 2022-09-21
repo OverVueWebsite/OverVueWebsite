@@ -8,8 +8,8 @@ export default function Introduction() {
       <div className="docs__content">
         <h2>Introduction</h2>
         <p>OverVue is a developer tool that allows you to seemlessly create and visualize a Vue application with expansive prototyping, a real-time, intuitive tree display of routing and component hierarchy, and live-generated, exportable boilerplate code. The best way to get started is by following our new user tutorial.</p>
-        <h3>Key Features</h3>​
-        <ul>
+        <h3 >Key Features</h3>​
+        <ul className="minusMargin">
           <li>
             Quickly produce product prototypes with your choice of custom or Element Plus library components. 
           </li>
