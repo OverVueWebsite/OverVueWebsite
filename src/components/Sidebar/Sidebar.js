@@ -3,7 +3,7 @@ import React from "react";
 import "./sidebar.css";
 import bootstrap from 'bootstrap';
 export default function Sidebar({ links }) {
-  console.log(links);
+  // console.log(links);
   return (
     <div className="sidebar">
       <div className="sidebar__inner"> 
