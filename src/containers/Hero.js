@@ -1,4 +1,4 @@
-/* content for hero of home page including OverVue banner, download buttons */
+/* content for hero of me page including OverVue banner, download buttons */
 
 import React from "react";
 import styled from "styled-components";
@@ -34,7 +34,8 @@ export const Hero = () => (
       transition={{ delay: 1 }}
       className="subtitle"
     >
-      Prototype driven development
+      {/* Prototype driven development */}
+      Introducing OverVue 8.0
     </motion.p>
 
     <motion.div
@@ -48,7 +49,8 @@ export const Hero = () => (
       }}
     >
       <div className="title">
-        <p>Introducing OverVue 8.0</p>
+        {/* <p>Introducing OverVue 8.0</p> */}
+        {/* <p> With our latest launch, going from prototype to production takes just the click of a button </p> */}
       </div>
 
       <Button
@@ -75,13 +77,20 @@ export const Hero = () => (
 const HeaderStyles = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 75vh;
   background: rgb(37, 96, 159);
   background: linear-gradient(
     107deg,
     rgb(52, 73, 94) 0%,
     rgb(1, 4, 31) 70%
   );
+  // background: linear-gradient(
+  //     // 107deg,
+  //     rgb(1, 4, 31) 0%,
+  //     // rgb(52, 73, 94) %,
+  //     rgb(255, 255, 255) 100%
+
+  //   );
   align-items: center;
   justify-content: center;
   img {
@@ -89,6 +98,7 @@ const HeaderStyles = styled.div`
     margin-right: 1.5rem;
   }
   p {
+    color: white;
     font-size: 1em;
   }
   i {
@@ -96,7 +106,7 @@ const HeaderStyles = styled.div`
     margin-left: 0.5em;
   }
   .title {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

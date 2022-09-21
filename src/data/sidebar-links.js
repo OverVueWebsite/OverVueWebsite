@@ -11,10 +11,10 @@ export const links = {
       label: "Installation",
       link: "/docs/installation",
     },
-    {
-      label: "New User Tutorial",
-      link: "/docs/new-user-tutorial",
-    },
+    // {
+    //   label: "New User Tutorial",
+    //   link: "/docs/new-user-tutorial",
+    // },
   ],
   //section heading and nested links
   'guides': [
@@ -26,18 +26,22 @@ export const links = {
       label: "Creating New Components",
       link: "/docs/create-component",
     },
+    // {
+    //   label: "Adding Styling",
+    //   link: "/docs/component-styling",
+    // },
     {
-      label: "Adding Styling",
-      link: "/docs/component-styling",
+      label: "OAuth Configuration",
+      link: "/docs/oauthConfig",
     },
     {
       label: "Using and Visualizing Routes",
       link: "/docs/routes",
     },
-    {
-      label: "Hierarchy Visualization",
-      link: "/docs/hierarchy-visualization",
-    },
+    // {
+    //   label: "Hierarchy Visualization",
+    //   link: "/docs/hierarchy-visualization",
+    // },
     {
       label: "Saving and Exporting your Code",
       link: "/docs/save-and-export",
