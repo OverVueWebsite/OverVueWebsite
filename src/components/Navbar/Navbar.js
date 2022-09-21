@@ -30,7 +30,7 @@ export default function Navbar() {
         <img class="overVue_logo" src={logo} alt={"logo"} />
       </Link>
       <div className="nav_actions">
-        <Link className="nav_docs" to={"/docs"}>
+        <Link className="nav_docs" to={"/docs/installation"}>
           Docs
         </Link>
         <Link className="nav_ourTeam" to={"/ourteam"}>
