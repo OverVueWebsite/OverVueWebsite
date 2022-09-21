@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import HeadTwoStyle from "../styles/HeadTwoStyle";
 import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Save from "../assets/doc-data/save.gif"
 export const Body = () => {
   
   const gifListObj = {
@@ -119,7 +118,7 @@ export const Body = () => {
             <img
               alt="Add html element Gif"
               className="shadow"
-              src={Save}
+              src="https://media.giphy.com/media/2L1RcRzNEM94wBrHWJ/giphy.gif"
             />
           </Section>
       </SectionContainer>

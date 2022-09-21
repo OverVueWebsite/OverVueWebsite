@@ -15,10 +15,6 @@ export default function ComponentStyling() {
           </div>
           <img className="gif" alt="codesnippet" src={Codesnippet}></img>
         </div>
-        {/* <h3>Positioning and Snap to Grid</h3>
-        <h3>Color Updates</h3>
-        <h3>Size Updates</h3>
-        <h3>Using Element Plus Components</h3>​ */}
       </div>
     </DocsLayout>
   );

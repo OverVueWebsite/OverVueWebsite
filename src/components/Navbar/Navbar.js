@@ -7,21 +7,36 @@ import "./navbar.css";
 export default function Navbar() {
 
   // Fetch Github stars at runtime
+  const defaultStars = '2.3k'; // Use this number if github fetch fails
+
   const [starsCount, setStarsCount] = useState('');
   useEffect(() => {
-    // Fetch data from Github api
-    console.log('useEffect');
-    fetch('https://api.github.com/repos/open-source-labs/OverVue')
-      .then(response => response.json())
-      .then(data => {
-        console.log('data', data);
-        const starsRounded = (data.stargazers_count/1000).toFixed(1);
-        setStarsCount(starsRounded + 'k');
-      })
-      .catch((error) => {
-        setStarsCount('');
-        console.log(error);
-      })
+    // Check localStorage for starCount, if present use that starsCount 
+    const localStorageStars = JSON.parse(window.localStorage.getItem('starsCount'));
+    if (!localStorageStars) {
+      setStarsCount(localStorageStars + 'k');
+    }
+    // Retrieve from Github if not present
+    else{
+      // Fetch data from Github api
+      fetch('https://api.github.com/repos/open-source-labs/OverVue')
+        .then(response => {
+          if (response.status === 403) {
+            throw new Error('403 error');
+          }
+          else return response.json()
+        })
+        .then(data => {
+          console.log('fetching stars...')
+          const starsRounded = (data.stargazers_count/1000).toFixed(1);
+          window.localStorage.setItem('starsCount', starsRounded);
+          setStarsCount(starsRounded + 'k');
+        })
+        .catch((error) => {
+          console.log(error);
+          setStarsCount('defaultStars');
+        })
+      };
   }, [])
 
   return (

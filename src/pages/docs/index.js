@@ -1,6 +1,9 @@
 import React from "react";
 import { DocsLayout } from "../../layouts";
 import "../../styles/docs.css";
+import styled from "styled-components";
+
+
 export default function Docs() {
   return (
     <DocsLayout>
@@ -10,7 +13,6 @@ export default function Docs() {
         OverVue is a developer tool that allows you to seemlessly create and visualize a Vue application with expansive prototyping, a real-time, intuitive tree display of routing and component hierarchy, and live-generated, exportable boilerplate code.
       </p>
       <h3>Key Features</h3>​
-      <ul>
         <li>
           Quickly produce product prototypes with your choice of custom or Element Plus library components. 
         </li>
@@ -26,7 +28,6 @@ export default function Docs() {
         <li>
           Share project updates with your team via Slack.
         </li>
-      </ul>
       <h3>Installation</h3>
       <p>
         OverVue is compatible with both MacOS and WSL. Quickly install and set up using the quickstart guide for your operating system below.

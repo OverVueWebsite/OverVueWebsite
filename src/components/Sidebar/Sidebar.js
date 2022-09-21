@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import "./sidebar.css";
 export default function Sidebar({ links }) {
-  console.log(links);
+  // console.log(links);
   return (
     <div className="sidebar">
       <div className="sidebar__inner">
