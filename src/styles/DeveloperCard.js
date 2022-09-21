@@ -6,7 +6,7 @@ const DeveloperCard = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 8em;
-  height: 8e,;
+  
   margin: 2.25em;
 
   .dev-pic {
@@ -17,7 +17,6 @@ const DeveloperCard = styled.div`
   }
   .dev-name {
     color: #dde;
-    line-height: 1.7em;
     font-weight: 500;
   }
   a {
@@ -25,7 +24,7 @@ const DeveloperCard = styled.div`
     text-decoration: none;
     font-size: .9em;
     font-weight: 500;
-    margin-bottom: -2.25em;
+    margin-bottom: -2.3em;
   }
   a:hover {
     color: #eef;

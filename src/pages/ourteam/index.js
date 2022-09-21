@@ -32,7 +32,9 @@ export default function OurTeam() {
         <h5 className="team-h5">Our product is built by a diverse community of developers who are passionate about improving prototype driven development.</h5>
       </div>
         <div className="devCards">
+          <div className="orderDevCards">
           {devCards}
+          </div>
         </div>
         <Contribute />
       </div>

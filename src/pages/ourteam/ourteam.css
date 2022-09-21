@@ -5,7 +5,7 @@
   font-weight: 700;
   padding-top: 48px;
   font-size: 48px;
-  max-width: 90%;
+  max-width: 80%;
   color: white;
   /* align-items:flex-start; */
 }
@@ -13,7 +13,7 @@
 .team-h3 {
   font-family: 'Inter', sans-serif;
   font-size: 24px;
-  max-width: 90%;
+  max-width: 80%;
   margin-bottom: 12px;
   color: white;
   font-weight: 300;
@@ -23,7 +23,7 @@
 .team-h4 {
   font-family: 'Inter', sans-serif;
   font-size: 36px;
-  width: 90%;
+  width: 80%;
   margin-bottom: 12px;
   color: white;
   font-weight: 300;
@@ -33,7 +33,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 20px;
-  width: 90%;
+  width: 80%;
   margin-bottom: 12px;
   color: white;
   font-weight: 300;
@@ -46,4 +46,11 @@
   text-align: left;
   justify-content: center;
   max-width: 100%;
+}
+.orderDevCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width:90%;
 }
