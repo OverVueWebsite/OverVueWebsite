@@ -34,7 +34,7 @@ export default function Navbar() {
         })
         .catch((error) => {
           console.log(error);
-          setStarsCount('defaultStars');
+          setStarsCount(defaultStars);
         })
       };
   }, [])
