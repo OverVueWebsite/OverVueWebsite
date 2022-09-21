@@ -90,3 +90,37 @@ a {
   flex-direction: row;
   color: #0e162f;
 }
+
+.nav .ham-btn {
+  display: none;
+}
+
+.nav #hidden {
+  display: flex;
+
+}
+
+@media only screen and (max-width: 650px) {
+  .nav .ham-btn {
+    display: flex;
+  }
+
+  .nav_actions .nav_docs,
+  .nav_actions .nav_ourTeam {
+    display: hidden;
+    color: white;
+  }
+
+  .nav #hidden {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    height: 230px;
+    width: 100%;
+    background-color: 0e162f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+  }
+}
