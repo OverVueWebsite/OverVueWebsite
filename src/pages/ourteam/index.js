@@ -27,7 +27,7 @@ export default function OurTeam() {
       <div className="footer">
       <div className="team-content">
       <h2 className="team-h2">About OverVue</h2>
-       <h3 className="team-h3">OverVue is an Open Source prototyping tool that allows developers to seemlessly create and visualize Vue applications with just the click of a button. </h3>
+       <h3 className="team-h3">OverVue is an Open Source prototyping tool that allows developers to seemlessly create and visualize Vue applications. </h3>
         <h4 className="team-h4">Our Team</h4>
         <h5 className="team-h5">Our product is built by a diverse community of developers who are passionate about improving prototype driven development.</h5>
       </div>
