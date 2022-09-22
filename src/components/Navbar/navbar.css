@@ -3,29 +3,29 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
+  height: 3em;
   padding: 12px;
-  align-items: center;
   z-index: 999;
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; */
   font-family: 'Inter', sans-serif;
   /* background-color: white; */
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.199);
   color: #0e162f;
 }
 
-.nav_logo {
-  /* width: 100%; */
+/* .nav_logo {
   max-width: 100em;
-}
+  align-self: center;
+} */
 
-.nav_logo img {
+/* .nav_logo img {
   width: 100%;
-}
+} */
 
 .overVue_logo {
   height: 2em;
@@ -37,9 +37,10 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  width: 300px;
+  /* width: 300px; */
   color: #0f1730;
   justify-content: space-between;
+  gap: 3.5em;
 }
 
 .nav_docs,
@@ -57,18 +58,22 @@
 .github_button,
 .nav_docs,
 .nav_ourTeam,
-.nav_logo {
+.nav_logo,
+.nav_blog {
   transition: all .2s ease-in-out;
   height: 1em;
   padding: 5px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 550;
 }
+
+
 
 .nav_logo:hover,
 .github_button:hover,
 .nav_docs:hover,
-.nav_ourTeam:hover {
+.nav_ourTeam:hover,
+.nav_blog:hover {
   transform: scale(1.05);
   color: #0d3f28;
 }
@@ -85,4 +90,63 @@ a {
   display: flex;
   flex-direction: row;
   color: #0e162f;
+}
+
+.nav .ham-btn {
+  display: none;
+}
+
+.nav #hidden {
+  display: flex;
+
+}
+
+@media only screen and (max-width: 650px) {
+  .nav .ham-btn {
+    display: flex;
+  }
+
+  .nav_actions .nav_docs,
+  .nav_actions .nav_ourTeam,
+  .nav_actions .github_button,
+  .nav_actions .nav_blog {
+    display: none;
+  }
+
+
+  .nav #hidden {
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    height: 120px;
+    max-height: 230px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    padding-bottom: 100px;
+    transform: translateY(10px);
+    transition:transform 0.3s ease-in-out;
+    border: 1px solid lightgrey;
+  }
+
+  .nav #hidden .nav_logo {
+    align-self: center;
+  }
+
+  .nav_actions {
+    gap: 0em;
+  }
+
+  .nav #hidden .nav_docs,
+  .nav #hidden .nav_ourTeam,
+  .nav #hidden .nav_blog {
+    display: inline;
+    margin: 5px;
+    /* margin: 0px; */
+    /* color: black; */
+    /* justify-content: space-between; */
+    /* align-self: center; */
+  }
 }
