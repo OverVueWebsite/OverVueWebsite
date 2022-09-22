@@ -18,7 +18,7 @@ export const Footer = () => {
         </a>
       </Socials>
       <h4>OverVue is licensed under the MIT License</h4>
-      <h4 className="OSLabs-line">Overvue is an open source project developed under tech accelerator <a href="https://opensourcelabs.io/">&nbsp;OSLabs</a></h4>
+      <h4 className="OSLabs-line">Overvue is an open source project developed under tech accelerator<a href="https://opensourcelabs.io/">&nbsp;OSLabs</a></h4>
     </FooterEle>
   )
 }
@@ -41,12 +41,11 @@ const Socials = styled.div`
 const FooterEle = styled.div`
   // background-color: rgb(243, 245, 246);
   > * {
-    margin: .5em;
+    margin: .7em;
   }
-  display: flex;
+  display: inline;
   flex-direction: column;
   justify-self: flex-end;
-  // margin-top: 10em;
   padding: 2.5em;
 
   h4 {
@@ -54,8 +53,8 @@ const FooterEle = styled.div`
     font-size: 1em;
   }
 
-  .OSLabs-line {
-    display: flex;
+  .OSLabs-line, .OSLabs-line > a {
+    display: inline;
     flex-direction: row;
     justify-content: center;
     font-size: 1em;

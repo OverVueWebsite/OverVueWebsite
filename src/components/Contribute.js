@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // styling and functionality of writing, OverVue link below the developer card
 const BottomDiv = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
   @media only screen and (max-width: 800px) {
     h2 {
     }
@@ -18,6 +19,8 @@ const BottomDiv = styled.div`
   margin-top: 6rem;
   h2 {
     font-weight: 100;
+    color: white;
+    font-family: 'Inter', sans-serif;
   }
   h2::after {
     background: hsla(0, 0%, 56.5%, 0.5);
@@ -44,7 +47,7 @@ const BottomDiv = styled.div`
     border-radius: 0.5rem;
     border: 1px solid white;
     background: #7ad8ae;
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     transition: 200ms ease-in;
     display: flex;
     justify-content: center;
@@ -53,16 +56,25 @@ const BottomDiv = styled.div`
       background-color: rgb(255, 255, 255, 0.2);
     }
   }
+  div {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+  }
+  div > a {
+    display: inline;
+    color: inherit;
+    text-decoration: underline;
+  }
 `;
 
 const Contribute = () => {
   return (
     <BottomDiv>
       <h2>Want to Contribute?</h2>
-      <div>OverVue is open source. Help make Vue prototyping better!</div>
-      <a className="contribute" href="https://github.com/open-source-labs/OverVue">
+      <div>Visit our <a href="">Github</a> and help make Vue prototyping better!</div>
+      {/* <a className="contribute" href="https://github.com/open-source-labs/OverVue">
         <p>Github </p> <i className="fab fa-github" />
-      </a>
+      </a> */}
     </BottomDiv>
   );
 };
