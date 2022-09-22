@@ -1,6 +1,5 @@
 // Accepts .jpg, .jpeg, and .png file extensions. File extension must be lowercase.
 
-import ari from "./dev-pics/ari.jpg";
 import aram from "./dev-pics/aram.jpg";
 import meganN from "./dev-pics/MeganN.jpg";
 import deanfchung from "./dev-pics/dean-chung.png";
@@ -240,12 +239,6 @@ const devData = {
     'github-handle': '@sunhonghaoparis',
     'github-link': 'https://github.com/sunhonghaoparis',
     'img': honghaoS
-  },
-  ari: {
-    'dev-name': 'Ari the Cat',
-    'github-handle': '@DatAriLyfe',
-    'github-link': 'https://github.com/MrBeeAreWhy',
-    'img': ari
   },
 };
 
