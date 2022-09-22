@@ -71,7 +71,7 @@ const Contribute = () => {
   return (
     <BottomDiv>
       <h2>Want to Contribute?</h2>
-      <div>Visit our <a href="">Github</a> and help make Vue prototyping better!</div>
+      <div>Visit our <a href="https://github.com/open-source-labs/OverVue">Github</a> and help make Vue prototyping better!</div>
       {/* <a className="contribute" href="https://github.com/open-source-labs/OverVue">
         <p>Github </p> <i className="fab fa-github" />
       </a> */}

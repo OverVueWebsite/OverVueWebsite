@@ -78,7 +78,7 @@ export const Body = () => {
 
   return (
     <div>
-      <BodyHeader>New in Overvue 8.0</BodyHeader>
+      <BodyHeader className="new-header">New in OverVue 8.0</BodyHeader>
       <SectionContainer>
           <Section>
             <HeadTwoStyle>
@@ -178,8 +178,8 @@ const AdditionalFeature = styled.div`
 
 const BodyHeader = styled.h1`
   color: black;
-  margin: 1em;
-  color: ##0f1730;
+  margin: 2em 0 1em 0;
+  color: #0F1730;
   font-size: 3em;
   font-weight: 300;
 `
@@ -199,7 +199,6 @@ const ImageContainer = styled.div`
 const ToggleButtonContainer = styled.div`
   justify-self: start;
   align-self: center;
-  // color: #000000;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -260,7 +259,7 @@ const Section = styled.div`
 
   h1 {
     margin-bottom: 1.5rem;
-    color: #0f1730;
+    color: #0F1730
   }
   p {
     color: #666666 !important;
@@ -306,7 +305,7 @@ const ReverseLayout = styled.div`
 
   h1 {
     margin-bottom: 1.5rem;
-    color: #666666 !important;
+    color: #0F1730 !important;
   }
   p {
     color: #666666 !important;

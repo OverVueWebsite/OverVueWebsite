@@ -55,19 +55,19 @@ export const Hero = () => (
 
       <Button
         className={"button"}
-        href="https://github.com/open-source-labs/OverVue/releases/download/v7.0.0/OverVue-Linuxv-7.0.0.dmg"
+        href="https://github.com/open-source-labs/OverVue/releases/download/v8.0.0/OverVue-8.0.0-darwin-universal.zip"
       >
         <div id="download">
-          <div>Download for</div> <i className="fab fa-apple" />
+          <div>Download for </div> <i className="fab fa-apple" />
         </div>
       </Button>
       <br />
       <Button
         className={"button"}
-        href="https://github.com/open-source-labs/OverVue/releases/download/v7.0.0/OverVue-Windows-v7.0.0.zip"
+        href="https://github.com/open-source-labs/OverVue/releases/download/v8.0.0/OverVue-8.0.0-linux-x64.zip"
       >
         <div id="download">
-          <div>Download for</div> <i className="fab fa-windows" />
+          <div>Download for Linux</div> <i className="fab fa-brands fa-linux"/>
         </div>
       </Button>
     </motion.div>

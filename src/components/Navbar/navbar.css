@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   width: 100vw;
+  height: 3em;
   padding: 12px;
   z-index: 999;
   font-family: 'Inter', sans-serif;
@@ -36,9 +37,10 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  width: 300px;
+  /* width: 300px; */
   color: #0f1730;
   justify-content: space-between;
+  gap: 3.5em;
 }
 
 .nav_docs,
@@ -61,14 +63,17 @@
   transition: all .2s ease-in-out;
   height: 1em;
   padding: 5px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 550;
 }
+
+
 
 .nav_logo:hover,
 .github_button:hover,
 .nav_docs:hover,
-.nav_ourTeam:hover {
+.nav_ourTeam:hover,
+.nav_blog:hover {
   transform: scale(1.05);
   color: #0d3f28;
 }
@@ -112,19 +117,28 @@ a {
   .nav #hidden {
     position: absolute;
     left: 0px;
-    top: 50px;
+    top: 40px;
     height: 120px;
     max-height: 230px;
     width: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 25px;
     padding-bottom: 100px;
     transform: translateY(10px);
     transition:transform 0.3s ease-in-out;
     border: 1px solid lightgrey;
   }
+
+  .nav #hidden .nav_logo {
+    align-self: center;
+  }
+
+  .nav_actions {
+    gap: 0em;
+  }
+
   .nav #hidden .nav_docs,
   .nav #hidden .nav_ourTeam,
   .nav #hidden .nav_blog {
