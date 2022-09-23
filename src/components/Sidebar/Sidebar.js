@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
 import "./sidebar.css";
-import bootstrap from 'bootstrap';
 export default function Sidebar({ links }) {
   // console.log(links);
   return (
